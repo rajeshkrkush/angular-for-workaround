@@ -1,0 +1,34 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-container > * {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    top: 100px;
+}
+
+.container_xsm {
+    position: relative;
+    top: 0px;
+}
+.right-menu-language{
+    right: 0 !important;
+    width: 80px;
+    height: 2px;
+
+}
+
+::ng-deep .langSelect .mat-select-arrow-wrapper {
+      display: none;
+
+    }
+
+    ::ng-deep .langSelect.mat-select {
+      display: list-item;
+    }
+    

@@ -1,0 +1,141 @@
+.divOuter{
+    display:inline;
+    text-align:center;
+}
+
+.divInner1{
+    float:left;
+    width:auto;
+    height:auto;
+    margin-left:160px;
+    margin-right:10px;
+}
+
+.divInner2, .divInner3{
+    float:left;
+    width:150px;
+    height:auto;
+    margin-left:10px;
+    margin-right:10px;
+}
+.slideshow {
+	position: absolute;
+	overflow: hidden;
+	width: 500px;
+}
+
+.wrapper { 
+	/*border : 2px solid #000; */
+	overflow:hidden;
+  }
+  
+  .wrapper div {
+	 min-height: 200px;
+	 padding: 10px;
+  }
+  #one {
+	background-color: gray;
+	float:left; 
+	margin-right:20px;
+	width:140px;
+	border-right:2px solid #000;
+  }
+  #two { 
+	background-color: white;
+	overflow:hidden;
+	margin:10px;
+	border:2px dashed #ccc;
+	min-height:170px;
+  }
+
+  .wrapper1 {  
+	overflow:hidden;
+  }
+  
+  .wrapper1 div {
+	 min-height: 1px;
+	 padding: 5px;
+	 padding-bottom: 5px;
+
+  }
+	div.colored > div:nth-child(2), .two{
+		background-color:whitesmoke;	
+	}
+  #one1 {
+	float:left; 
+	margin-right:20px;
+	border-radius: 12px;
+	height: auto;
+  }
+  #two2 { 
+	background-color: white;
+	overflow:hidden;
+	float: left;
+	margin-right:10px;
+  }
+  
+  @media screen and (max-width: 400px) {
+	 #one { 
+	  float: none;
+	  margin-right:0;
+	  width:auto;
+	  border:0;
+	  border-bottom:2px solid #000;    
+	}
+  }
+/* .slideshow > div {
+    position: absolute;
+    max-width: 100%;
+    width: 500%;
+}
+
+.slideshow > div > img {
+    height: 140%;
+} */
+
+/* .wrapper-content {
+	/*border-top: 1px solid rgba(68, 68, 68, 0.5);
+	border-left: 1px solid rgba(68, 68, 68, 0.5);
+	border-right: 1px solid rgba(68, 68, 68, 0.5);
+	border: 1px solid rgba(68, 68, 68, 0.5);
+	background-color: #F8F8F9;
+	font: normal 10px/1.5em Arial Verdana, sans-serif;
+}
+.wrapper-content h3 {
+	color: #333;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 1px solid #C0C0C0;
+	font-size: 16px;
+	background-color: #DEDEDE;
+}
+.wrapper-content p {
+	font-size: 14px;
+}
+.wrapper-content hr {
+	border-top: 1px solid #bababa;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 0px;
+} */
+
+.fixed {
+  @extend .bg-white;
+  position: fixed;
+  top: 80px;
+  z-index: 999;
+}
+
+.sticky {
+	background: #fff;
+	box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+	position: fixed;
+	top: 0;
+	height: 120px;
+	width: 100%;
+}
+
+.f-s-l{
+	font-size: large;	
+}

@@ -1,0 +1,39 @@
+<div>
+  <div class="session-form-hold">
+    <mat-card class="page-wrap height-100 mat-bg-primary">
+      <mat-card-content>
+        <div class="text-center">
+          <img src="./assets/logo.png" style="width: 200px;
+            height: 90px" alt="">
+        </div>
+
+        <form [formGroup]="signinForm" novalidate (ngSubmit)="login()" autocomplete="off">
+          <div class="inputdiv">
+            <mat-form-field class="full-width">
+              <input matInput required autocomplete="off" id="name" name="name" formControlName="name" [(ngModel)]="signinData.name"
+                placeholder="Name" />
+              <mat-error *ngFor="let validation of validation_messages.name">
+                <div class="form-error-msg" *ngIf="signinForm.get('name').hasError(validation.type) && signinForm.get('name').touched">
+                  {{validation.message}}
+                </div>
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="inputdiv">
+            <mat-form-field class="full-width">
+              <input matInput required autocomplete="off" id="mobilenumber" name="mobilenumber" formControlName="mobilenumber"
+                [(ngModel)]="signinData.mobilenumber" placeholder="mobilenumber" />
+              <mat-error *ngFor="let validation of validation_messages.mobilenumber">
+                <div class="form-error-msg" *ngIf="signinForm.get('mobilenumber').hasError(validation.type) && signinForm.get('mobilenumber').touched">
+                  {{validation.message}}
+                </div>
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <button mat-raised-button class="mat-primary full-width mb-1" style="margin-left:0 !important" type="submit">Submit</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
